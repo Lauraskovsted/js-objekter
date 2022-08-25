@@ -13,7 +13,7 @@ function start() {
   console.log("loaded");
 }
 
-const destination = document.querySelector("#dyrartikel");
+const destination = document.querySelector("#dyr");
 const fuldeTitel = `Dyr: ${dyr.navn} Type: ${dyr.type} Levested: ${dyr.levested}`;
 
 destination.querySelector("p").textContent = fuldeTitel;
