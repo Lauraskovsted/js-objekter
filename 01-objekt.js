@@ -6,3 +6,15 @@ let dyr = {
 };
 
 console.log(`navn:${dyr.navn} type:${dyr.type} levested:${dyr.levested}`);
+
+document.addEventListener("DOMContentLoaded", start);
+
+function start() {
+  console.log("loaded");
+}
+
+const destination = document.querySelector("#dyrartikel");
+const fuldeTitel = `Dyr: ${dyr.navn} Type: ${dyr.type} Levested: ${dyr.levested}`;
+
+destination.querySelector("p").textContent = fuldeTitel;
+destination.querySelector("img").src = dyr.billede;
